@@ -15,19 +15,10 @@ export async function GET(
 
   const productResponse = await client.getProductV3(barcode);
 
-  console.log("productResponse: ", productResponse);
-
   if (!productResponse.data) {
     return NextResponse.json(
-      { error: `Producto con código ${barcode} no encontrado` },
+      { error: `El producto con código ${barcode} no existe en la base de datos` },
       { status: 404 }
-    );
-  }
-
-  if (productResponse.data?.status == "failure") {
-    return NextResponse.json(
-      { error: `Producto con código ${barcode} no encontrado` },
-      { status: 500 }
     );
   }
 

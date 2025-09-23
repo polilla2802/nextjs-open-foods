@@ -15,11 +15,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   const productJson = await productResponse.json();
 
-  if (!productJson.data) {
+  if(productJson.error) {
     return (
       <div className="p-6 flex flex-col justify-center items-center gap-6">
         <p>
-          Error: No existe el producto en la base de datos, volver a intentar
+          {productJson.error}
         </p>
         <button
           className="bg-white text-black font-bold py-2 px-4 rounded mb-6"
