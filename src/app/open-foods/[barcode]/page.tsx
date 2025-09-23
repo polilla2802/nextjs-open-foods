@@ -7,7 +7,7 @@ type ProductPageProps = {
 
 let product: ProductDataType | undefined;
 
-let apiURL = process.env.NEXT_PUBLIC_API_BASE_URL;
+let apiURL = process.env.NEXT_PUBLIC_BASE_URL;
 
 export default async function ProductPage({ params }: ProductPageProps) {
   const productResponse = await fetch(
