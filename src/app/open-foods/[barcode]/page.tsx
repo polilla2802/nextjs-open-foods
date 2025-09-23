@@ -6,15 +6,11 @@ type ProductPageProps = {
 };
 
 let product: ProductDataType | undefined;
-
-let apiURL = process.env.NEXT_PUBLIC_BASE_URL;
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export default async function ProductPage({ params }: ProductPageProps) {
   const productResponse = await fetch(
-    `${apiURL}/api/open-foods/${params.barcode}`,
-    {
-      cache: "no-store",
-    }
+    `${baseUrl}/api/open-foods/${params.barcode}`
   );
 
   const productJson = await productResponse.json();
