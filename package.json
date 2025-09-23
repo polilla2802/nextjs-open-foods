@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 8000",
     "prisma:pull:dev": "dotenv -e .env.development -- prisma db pull",
     "prisma:pull:prod": "dotenv -e .env.production -- prisma db pull",
     "prisma:generate:dev": "dotenv -e .env.development -- prisma generate",
