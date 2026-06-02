@@ -22,7 +22,7 @@ There's also a "Escanear otro producto" button so you can keep scanning without 
 
 | Scanning a barcode | Product info |
 |---|---|
-| ![scanner](./docs/screenshot-scanner.jpeg) | ![result](./docs/screenshot-result.jpeg) |
+| ![scanner](./docs/screenshot-scanner.png) | ![result](./docs/screenshot-result.png) |
 
 ## Tech stack
 
