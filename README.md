@@ -4,7 +4,7 @@ A small personal project I built to scan food product barcodes with my phone's c
 
 **Live demo:** [nextjs-open-foods.vercel.app/open-foods](https://nextjs-open-foods.vercel.app/open-foods)
 
-![Open Foods barcode scanner](./docs/screenshot-scanner.jpeg)
+![Open Foods barcode scanner](./docs/open-foods-1.png)
 
 ---
 
@@ -22,7 +22,7 @@ There's also a "Escanear otro producto" button so you can keep scanning without 
 
 | Scanning a barcode | Product info |
 |---|---|
-| ![scanner](./docs/screenshot-scanner.png) | ![result](./docs/screenshot-result.png) |
+| ![scanner](./docs/open-foods-1.png) | ![result](./docs/open-foods-2.png) |
 
 ## Tech stack
 
