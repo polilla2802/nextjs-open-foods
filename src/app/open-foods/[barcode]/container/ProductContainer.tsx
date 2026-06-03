@@ -69,7 +69,7 @@ export default function ProductContainer({ product }: ProductPageProps) {
           </h1>
         </div>
 
-        {grade && (
+        {grade && grade in nutriscoreColors && (
           <div className={`${gradeColor} rounded-2xl px-5 py-4 flex items-center justify-between shadow`}>
             <div>
               <p className="text-white text-xs font-semibold uppercase tracking-wider">NutriScore</p>
