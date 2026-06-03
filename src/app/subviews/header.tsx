@@ -1,8 +1,5 @@
 "use client";
 
-import Link from 'next/link';
-import Image from 'next/image';
-
 import { useEffect } from 'react';
 
 export default function Header(props: any) {
@@ -21,9 +18,9 @@ export default function Header(props: any) {
             fontSize: "20px",
             fontWeight: "200",
         }}>
-            <div style={{ marginLeft: "-10px", fontWeight: 500 }}>Scanbot</div>
-            <div style={{ padding: "0 5px 0 5px" }}> Web</div>
-            <div style={{ fontWeight: 500 }}>SDK</div>
+            <div style={{ marginLeft: "-10px", fontWeight: 700 }}>Open</div>
+            <div style={{ padding: "0 6px 0 6px", fontWeight: 300 }}> </div>
+            <div style={{ fontWeight: 700 }}>Foods</div>
         </div>
     )
 }
